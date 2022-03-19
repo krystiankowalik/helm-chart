@@ -3,7 +3,17 @@ entries:
   sample-cloud-config-server:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-19T15:12:48.365610174+01:00"
+    created: "2022-03-19T15:23:40.61999712+01:00"
+    description: A Helm chart for Kubernetes
+    digest: dae391cd25b23e883797382e5fad0b7e3f8d34f826aec364a597525a5a933b7d
+    name: sample-cloud-config-server
+    type: application
+    urls:
+    - https://krystiankowalik.github.io/helm-chart/sample-cloud-config-server-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-19T15:23:40.619449773+01:00"
     description: A Helm chart for Kubernetes
     digest: 08a94a036858101b9ee3e98e668e3b420b25f0c8b428162b7bcbfabd24423da1
     name: sample-cloud-config-server
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://krystiankowalik.github.io/helm-chart/sample-cloud-config-server-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-19T15:12:48.365107034+01:00"
+generated: "2022-03-19T15:23:40.61887307+01:00"

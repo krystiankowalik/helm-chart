@@ -1,0 +1,1 @@
+helm repo index --url https://krystiankowalik.github.io/helm-chart/ --merge index.yaml .
