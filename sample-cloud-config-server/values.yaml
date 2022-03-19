@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: krystiankowalik/sample-cloud-config-server
+  repository: https://krystiankowalik.github.io/helm-chart/
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
