@@ -49,7 +49,8 @@ ingress:
     kubernetes.io/tls-acme: "true"
   hosts:
     - paths:
-        - path: /sample/cloud/config/server/
+        - host: "34.118.122.150.nip.io"
+          path: /sample/cloud/config/server/
           pathType: Prefix
           backend:
             service:
