@@ -1,8 +1,11 @@
 
 #Deploy
 helm install sample-cloud-config-server myhelmrepo/sample-cloud-config-server -n development
-helm upgrade sample-cloud-config-server myhelmrepo/sample-cloud-config-server -n development
+helm upgrade --set SPRING_PROFILES_ACTIVE=dev sample-cloud-config-server myhelmrepo/sample-cloud-config-server -n development
 helm uninstall sample-cloud-config-server
 
 #Add repo
 helm repo add myhelmrepo https://krystiankowalik.github.io/helm-chart/
+
+#Check package
+helm search repo sample-cloud-config-server -l
