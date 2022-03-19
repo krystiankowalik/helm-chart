@@ -44,11 +44,11 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /sample/cloud/config/server/actuator/health/liveness
+              path: /sample/cloud/microservice/actuator/health/liveness
               port: http
           readinessProbe:
             httpGet:
-              path: /sample/cloud/config/server/actuator/health/readiness
+              path: /sample/cloud/microservice/actuator/health/readiness
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
