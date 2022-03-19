@@ -49,9 +49,9 @@ ingress:
 #    kubernetes.io/tls-acme: "true"
     cert-manager.io/issuer: "letsencrypt-production"
   hosts:
-    - paths:
-        - host: "34.118.122.150.nip.io"
-          path: /sample/cloud/config/server/
+    - host: "test.kowalik.tech"
+      paths:
+        - path: /sample/cloud/config/server/
           pathType: Prefix
           backend:
             service:
