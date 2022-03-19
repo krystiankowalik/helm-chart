@@ -42,14 +42,16 @@ spec:
             - name: http
               containerPort: {{ .Values.service.targetPort }}
               protocol: TCP
+          {{- if .Values.probes.enabled }}
           livenessProbe:
             httpGet:
-              path: /sample/cloud/microservice/actuator/health/liveness
+              path: {{ .Values.contextPath }}/actuator/health/liveness
               port: http
           readinessProbe:
             httpGet:
-              path: /sample/cloud/microservice/actuator/health/readiness
+              path: {{ .Values.contextPath }}/actuator/health/readiness
               port: http
+          {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

@@ -41,6 +41,8 @@ service:
   port: 80
   targetPort: 8080
 
+contextPath: &globalContextPath /sample/cloud/microservice
+
 ingress:
   enabled: true
   className: ""
@@ -50,7 +52,7 @@ ingress:
   hosts:
     - host: "test.kowalik.tech"
       paths:
-        - path: /sample/cloud/microservice/
+        - path: *globalContextPath
           pathType: Prefix
           backend:
             service:
@@ -90,3 +92,5 @@ affinity: { }
 env:
   - name: SPRING_PROFILES_ACTIVE
     value: dev
+probes:
+  enabled: true
