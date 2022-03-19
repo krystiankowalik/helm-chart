@@ -48,7 +48,7 @@ ingress:
     kubernetes.io/ingress.class: nginx
 #    kubernetes.io/tls-acme: "true"
 #    cert-manager.io/issuer: "letsencrypt-staging"
-    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    cert-manager.io/cluster-issuer: "letsencrypt-production"
   hosts:
     - host: "test.kowalik.tech"
       paths:
@@ -60,7 +60,7 @@ ingress:
               port:
                 number: 8080
   tls:
-    - secretName: example-tls
+    - secretName: example-tls2
       hosts:
         - test.kowalik.tech
 
