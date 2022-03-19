@@ -14,3 +14,6 @@ helm repo update
 
 #Check package
 helm search repo sample-cloud-config-server -l
+
+helm repo update && helm search repo sample-cloud-config-server -l
+
