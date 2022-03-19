@@ -60,7 +60,7 @@ ingress:
               port:
                 number: 8080
   tls:
-    - secretName: letsencrypt-staging-secret
+    - secretName: example-tls
       hosts:
         - test.kowalik.tech
 
